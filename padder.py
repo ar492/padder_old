@@ -24,7 +24,7 @@ with open(filename, "w") as f:
 				lines[l]=lines[l].replace(", ", ",")
 				lines[l]=lines[l].replace(" ,", ",")
 			lines[l]=lines[l].replace(",", ", ")
-			lines[l]=lines[l].replace("<<=", " df7d11fce2f307006e53efc357f01d42")
+			lines[l]=lines[l].replace("<<=", "df7d11fce2f307006e53efc357f01d42")
 			lines[l]=lines[l].replace(">>=", "a5f4eb4e39b2633b1ec269e53cde1368")
 			for x in ["+", "-", "*", '/', '<', '>', '^', '&', '|', '%']:
 				lines[l]=lines[l].replace(x + "=", "1fd8355cd2018e03d0050ca98947c223")
@@ -39,6 +39,12 @@ with open(filename, "w") as f:
 				lines[l]=lines[l].replace("*=", "1fd8355cd2018e03d0050ca98947c226")
 				lines[l]=lines[l].replace("/=", "1fd8355cd2018e03d0050ca98947c227")
 				lines[l]=lines[l].replace("%=", "1fd8355cd2018e03d0050ca98947c228")
+				lines[l]=lines[l].replace("|=", "1fd8355cd2018e03d0050ca98947c229")
+				lines[l]=lines[l].replace("&=", "1fd8355cd2018e03d0050ca98947c220")
+				lines[l]=lines[l].replace("^=", "1fd8355cd2018e03d0050ca98947c218")
+				lines[l]=lines[l].replace("<=", "1fd8355cd2018e03d0050ca98947c208")
+				lines[l]=lines[l].replace(">=", "1fd8355cd2018e03d0050ca98947c108")
+
 				lines[l]=lines[l].replace("=", " = ")
 				lines[l]=lines[l].replace("1fd8355cd2018e03d0050ca98947c223", "==")
 				lines[l]=lines[l].replace("1fd8355cd2018e03d0050ca98947c224", "+=")
@@ -46,6 +52,12 @@ with open(filename, "w") as f:
 				lines[l]=lines[l].replace("1fd8355cd2018e03d0050ca98947c226", "*=")
 				lines[l]=lines[l].replace("1fd8355cd2018e03d0050ca98947c227", "/=")
 				lines[l]=lines[l].replace("1fd8355cd2018e03d0050ca98947c228", "%=")
+				lines[l]=lines[l].replace("1fd8355cd2018e03d0050ca98947c229", "|=")
+				lines[l]=lines[l].replace("1fd8355cd2018e03d0050ca98947c220", "&=")
+				lines[l]=lines[l].replace("1fd8355cd2018e03d0050ca98947c218", "^=")
+				lines[l]=lines[l].replace("1fd8355cd2018e03d0050ca98947c208", "<=")
+				lines[l]=lines[l].replace("1fd8355cd2018e03d0050ca98947c108", ">=")
+
 			for x in doubles:
 				lines[l]=lines[l].replace(x, " " + x + " ")
 			lines[l]=lines[l].replace("df7d11fce2f307006e53efc357f01d42", " <<= ")
