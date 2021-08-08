@@ -1,7 +1,7 @@
 # padder
 Automatically add space padding around operators. Compatiable with C++, Java, maybe more. 
 
-![demo](./demo-gif.gif)
+![demo](https://github.com/ar492/padder/blob/main/demo_gif.gif)
 
 ## Prerequisites:
 - Python (from terminal)
