@@ -1,6 +1,8 @@
 # padder
 Automatically add space padding around operators. Compatiable with C++, Java, maybe more. 
 
+![](demo-gif.gif)
+
 ## Prerequisites:
 - Python (from terminal)
 - Windows OS; this can certainly be applied to other OS's/setups with some modifications, but it's only been tested on Windows OS.
