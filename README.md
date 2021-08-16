@@ -1,11 +1,12 @@
 # padder
-Automatically add space padding around operators. Compatiable with C++, Java, maybe more. 
+Automatically add space padding around operators. Compatiable with C++, Java, probably more. 
 
 ![demo](https://github.com/ar492/padder/blob/main/demo_gif.gif)
 
 ## Prerequisites:
 - Python (from terminal)
-- Windows OS; this can certainly be applied to other OS's/setups with some modifications, but it's only been tested on Windows OS.
+- Windows OS; this can certainly be applied to other setups with some modifications, but it's been written specifically Windows OS.
+- The third party [`regex` package](https://pypi.org/project/regex/)
 
 ## Usage:
 
