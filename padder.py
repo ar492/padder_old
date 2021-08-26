@@ -1,3 +1,4 @@
+# try to replace [^\+\-*\/=:\?><\|!\^&%\s]+ with \w+
 import sys
 import regex as re
 
@@ -11,7 +12,7 @@ with open(filename, "w") as f:
 	f.truncate()
 	for i in range(len(lines)):
 		if not "#" in lines[i]:
-			lines[i]=re.sub(r"(\w+)(\s*)([\+\-*\/=:\?><\|!\^&%]+)(\s*)(?=(\w+))", "\\1 \\3 ", lines[i])
+			lines[i]=re.sub(r"([^\+\-*\/=:\?><\|!\^&%\s]+)(\s*)([\+\-*\/=:\?><\|!\^&%]+)(\s*)(?=([^\+\-*\/=:\?><\|!\^&%\s]+))", "\\1 \\3 ", lines[i])
 		f.write(lines[i])
 
 # python "C:\Users\gbpol\Desktop\Useful\Competitive-Programming\Util\padder.py" "C:\Users\gbpol\Desktop\Useful\Competitive-Programming\Util\testing.txt"
